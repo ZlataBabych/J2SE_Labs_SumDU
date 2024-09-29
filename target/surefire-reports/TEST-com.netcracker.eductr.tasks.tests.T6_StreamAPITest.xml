@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.netcracker.eductr.tasks.tests.T6_StreamAPITest" time="0.001" tests="1" errors="0" skipped="1" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="D:\Zlata\COURSE_4\sem1\Java J2SE\NCTaskManager\target\test-classes;D:\Zlata\COURSE_4\sem1\Java J2SE\NCTaskManager\target\classes;C:\Users\Zlata\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\Zlata\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Zlata\.m2\repository\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Europe/Kiev"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="UA"/>
+    <property name="sun.boot.library.path" value="C:\Users\Zlata\.jdks\corretto-21.0.4\bin"/>
+    <property name="sun.java.command" value="C:\Users\Zlata\AppData\Local\Temp\surefire7291333005539581785\surefirebooter12134159441228982505.jar C:\Users\Zlata\AppData\Local\Temp\surefire7291333005539581785 2024-09-12T01-09-39_120-jvmRun1 surefire4648269967250393268tmp surefire_017152254532988880201tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Zlata\COURSE_4\sem1\Java J2SE\NCTaskManager\target\test-classes;D:\Zlata\COURSE_4\sem1\Java J2SE\NCTaskManager\target\classes;C:\Users\Zlata\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\Zlata\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Zlata\.m2\repository\org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Zlata"/>
+    <property name="user.language" value="uk"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Users\Zlata\.jdks\corretto-21.0.4"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Zlata\COURSE_4\sem1\Java J2SE\NCTaskManager"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Zlata\AppData\Local\Temp\surefire7291333005539581785\surefirebooter12134159441228982505.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.4+7-LTS"/>
+    <property name="user.name" value="Zlata"/>
+    <property name="stdout.encoding" value="Cp1251"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-21.0.4.7.1"/>
+    <property name="localRepository" value="C:\Users\Zlata\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-21/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Zlata\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2024.2.1"/>
+    <property name="java.version" value="21.0.4"/>
+    <property name="user.dir" value="D:\Zlata\COURSE_4\sem1\Java J2SE\NCTaskManager"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Users\Zlata\.jdks\corretto-21.0.4\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Oracle\dbhomeXE\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\Git LFS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\PuTTY\;C:\MinGW\bin;C:\Program Files\dotnet\;D:\Git\cmd;C:\Program Files\PowerShell\7\;C:\Users\Zlata\AppData\Local\Programs\Python\Launcher\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Zlata\AppData\Local\Microsoft\WindowsApps;%IntelliJ IDEA Community Edition%;C:\Users\Zlata\AppData\Local\GitHubDesktop\bin;C:\Users\Zlata\AppData\Local\Programs\Microsoft VS Code\bin;D:\IntelliJ IDEA 2024.2.1\bin;D:\DataGrip 2023.3.4\bin;C:\Program Files\PostgreSQL\16rc1\bin;C:\Users\Zlata\.dotnet\tools;D:\CMake\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1251"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="21.0.4+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="" classname="com.netcracker.eductr.tasks.tests.T6_StreamAPITest" time="0">
+    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+  </testcase>
+</testsuite>
