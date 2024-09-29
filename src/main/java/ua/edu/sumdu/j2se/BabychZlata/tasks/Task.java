@@ -13,31 +13,39 @@ public class Task {
     private boolean repeated;
 
     /**
-     * Constructor
+     * Constructor for a non-repetitive task.
      * @param title The title of the task.
-     * @param time The time the task is set to be executed.
+     * @param time The time of the task.
+     * @throws IllegalArgumentException if time is negative.
      */
     public Task(String title, int time) {
+        if (time < 0) {
+            throw new IllegalArgumentException("Time cannot be negative.");
+        }
         this.title = title;
         this.time = time;
-        this.active = false;
         this.repeated = false;
+        this.active = false;
     }
 
     /**
-     * Constructor
+     * Constructor for a repetitive task.
      * @param title The title of the task.
-     * @param start The start time of the task.
-     * @param end The end time of the task.
-     * @param interval The interval at which the task repeats.
+     * @param start The start time.
+     * @param end The end time.
+     * @param interval The repeat interval.
+     * @throws IllegalArgumentException if start, end or interval is invalid.
      */
     public Task(String title, int start, int end, int interval) {
+        if (start < 0 || end < 0 || interval <= 0 || start >= end) {
+            throw new IllegalArgumentException("Invalid time or interval values.");
+        }
         this.title = title;
         this.start = start;
         this.end = end;
         this.interval = interval;
-        this.active = false;
         this.repeated = true;
+        this.active = false;
     }
 
     public String getTitle() {
@@ -67,8 +75,12 @@ public class Task {
     /**
      * Sets the time
      * @param time The time for the non-repetitive task.
+     * @throws IllegalArgumentException if time is negative.
      */
     public void setTime(int time) {
+        if (time < 0) {
+            throw new IllegalArgumentException("Time cannot be negative.");
+        }
         this.time = time;
         this.repeated = false;
     }
@@ -102,8 +114,12 @@ public class Task {
      * @param start The start time.
      * @param end The end time.
      * @param interval The interval for the repetitive task.
+     * @throws IllegalArgumentException if start, end or interval is invalid.
      */
     public void setTime(int start, int end, int interval) {
+        if (start < 0 || end < 0 || interval <= 0 || start >= end) {
+            throw new IllegalArgumentException("Invalid time or interval values.");
+        }
         this.start = start;
         this.end = end;
         this.interval = interval;
@@ -151,7 +167,6 @@ public class Task {
         if (this == other) {
             return true;
         }
-
         // Compare all fields for equality (null-safe for title)
         return (title != null ? title.equals(other.title) : other.title == null) &&
                 active == other.active &&

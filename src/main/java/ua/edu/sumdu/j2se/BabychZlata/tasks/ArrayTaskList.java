@@ -22,8 +22,12 @@ public class ArrayTaskList {
     /**
      * Method to add a task to the list
      * @param task
+     * @throws IllegalArgumentException if the task is null
      */
     public void add(Task task) {
+        if (task == null) {
+            throw new IllegalArgumentException("Task cannot be null.");
+        }
         if (size == tasks.length) {
             tasks = Arrays.copyOf(tasks, size * 2);  // Double the size if array is full
         }
@@ -33,9 +37,13 @@ public class ArrayTaskList {
     /**
      * Method to remove a task from the list
      * @param task
+     * @throws IllegalArgumentException if the task is null
      * @return true if the task was removed, false otherwise
      */
     public boolean remove(Task task) {
+        if (task == null) {
+            throw new IllegalArgumentException("Task cannot be null.");
+        }
         for (int i = 0; i < size; i++) {
             if (tasks[i].equals(task)) {
                 // Shift remaining elements to the left
@@ -58,12 +66,12 @@ public class ArrayTaskList {
     /**
      * Method to get a task at a specific index
      * @param index
-     * @throws IndexOutOfBoundsException if index is invalid
+     * @throws IndexOutOfBoundsException if the index is out of bounds
      * @return task at the specified index
      */
     public Task getTask(int index) {
         if (index < 0 || index >= size) {
-            throw new IndexOutOfBoundsException("Invalid index");
+            throw new IndexOutOfBoundsException("Index is out of bounds.");
         }
         return tasks[index];
     }
